@@ -14,6 +14,12 @@ function startTimer() {
   timerInterval = setInterval(action, 1000);
 }
 
+// function startTimer() {
+//   if (timerInterval !== null) {
+//     timerInterval = setInterval(action, 1000);
+//   }
+// }
+
 startBtn.addEventListener("click", () => {
   clearInterval(timerInterval);
   timerInterval = null;
@@ -37,7 +43,7 @@ function action() {
     hour++;
   }
 
-  time = time + ;
+  time++;
 }
 
 stopBtn.addEventListener("click", () => {
